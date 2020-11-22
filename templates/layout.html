@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" class="antialiased">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tailwind Starter Template - Multi Section Form / Scrollspy: Tailwind Toolbox</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/@tailwindcss/custom-forms/dist/custom-forms.min.css" rel="stylesheet">
+    <!--Replace with your tailwind.css once created-->
+    <style>
+        .max-h-64 {
+            max-height: 16rem;
+        }
+
+        /*Quick overrides of the form input as using the CDN version*/
+        .form-input,
+        .form-textarea,
+        .form-select,
+        .form-multiselect {
+            background-color: #edf2f7;
+        }
+    </style>
+
+</head>
+
+<body class="bg-gray-100 text-gray-900 tracking-wider leading-normal">
+
+    <nav id="header" class="bg-white fixed w-full z-10 top-0 shadow">
+
+        <div class="w-full container mx-auto flex flex-wrap items-center justify-between my-4">
+
+            <div class="pl-4 md:pl-0">
+                <a class="flex items-center text-red-600 text-base xl:text-xl no-underline hover:no-underline font-extrabold font-sans"
+                    href="#">
+                    <svg class="fill-current h-6 inline-block text-red-600 mr-4" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 95.819 95.819">
+                        <g>
+                            <g>
+                                <path d="M76.031,9.554c-2.551-2.531-6.002-3.943-9.598-3.926c-3.593,0.02-7.031,1.468-9.555,4.026L42.411,24.322l-4.635-4.658
+			c3.751-4.754,3.444-11.671-0.924-16.069C32.134-1.16,24.448-1.208,19.696,3.509c-4.754,4.719-4.76,12.403-0.04,17.157
+			l13.236,13.308l-13.001,13.18c-4.721,4.754-4.716,12.438,0.039,17.157c4.754,4.719,12.438,4.669,17.158-0.086
+			c4.366-4.398,4.674-11.314,0.924-16.07l4.471-4.539l15.047,15.125c5.285,5.313,13.875,5.342,19.193,0.062L51.998,33.957
+			L76.031,9.554z M31.455,15.406c-1.793,1.779-4.698,1.768-6.478-0.023C23.2,13.59,23.208,10.687,25,8.907
+			c1.793-1.779,4.698-1.769,6.478,0.022C33.257,10.721,33.247,13.627,31.455,15.406z M31.714,58.889
+			c-1.779,1.791-4.686,1.802-6.478,0.021c-1.79-1.778-1.802-4.684-0.021-6.477c1.778-1.791,4.683-1.803,6.476-0.023
+			C33.48,54.191,33.49,57.096,31.714,58.889z M42.385,38.673c-2.543,0-4.604-2.063-4.604-4.604c0-2.543,2.062-4.605,4.604-4.605
+			s4.604,2.063,4.604,4.605C46.989,36.61,44.928,38.673,42.385,38.673z" />
+                                <rect x="32.824" y="90.912" width="7.935" height="4.907" />
+                                <rect x="16.224" y="90.912" width="8.665" height="4.907" />
+                                <rect x="0.355" y="90.912" width="7.934" height="4.907" />
+                                <rect x="0.355" y="33.179" width="4.906" height="7.935" />
+                                <rect x="0.355" y="49.048" width="4.906" height="7.935" />
+                                <rect x="48.693" y="90.912" width="7.934" height="4.907" />
+                                <rect x="0.355" y="64.917" width="4.906" height="7.935" />
+                                <rect x="0.355" y="80.786" width="4.906" height="7.935" />
+                                <rect x="8.29" y="33.179" width="7.935" height="5.011" />
+                                <rect x="64.561" y="90.912" width="7.936" height="4.907" />
+                                <rect x="90.557" y="39.548" width="4.906" height="7.935" />
+                                <rect x="87.529" y="33.179" width="7.935" height="5.011" />
+                                <rect x="90.557" y="71.285" width="4.906" height="7.936" />
+                                <rect x="90.557" y="55.417" width="4.906" height="7.934" />
+                                <rect x="71.66" y="33.179" width="7.936" height="5.011" />
+                                <rect x="90.557" y="87.154" width="4.906" height="8.665" />
+                                <rect x="80.431" y="90.912" width="7.935" height="4.907" />
+                            </g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                    </svg>
+                    AI Background Remover
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!--Container-->
+    {% block body %}
+    {% endblock %}
+    <!--/container-->
+
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+
+</body>
+
+</html>
